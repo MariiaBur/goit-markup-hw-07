@@ -1,11 +1,9 @@
 .modal-btn {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  font-family: $main-font;
+  @include font(700, 16px, 1.87, 0.06em);
 
-  color: #fff;
-  background-color: #2196f3;
+  color: $light-theme;
+  background-color: $accent-color;
 
   display: inline-block;
   min-width: 200px;

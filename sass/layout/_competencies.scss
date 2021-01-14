@@ -18,29 +18,23 @@
 
 .quality-icon-decor {
   text-align: center;
-  background: #f5f4fa;
+  background: $light-btn;
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 30px;
 }
 
 .quality-list-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
 
-  color: #212121;
+  color: $secondary-title;
 
   margin-bottom: 10px;
 }
 
 .quality-list-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
 
-  color: #757575;
+  color: $secondary-text;
 }

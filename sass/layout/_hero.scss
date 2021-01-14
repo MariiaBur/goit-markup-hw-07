@@ -1,5 +1,5 @@
 .hero {
-  background-color: #2f303a;
+  background-color: $background-theme;
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(
@@ -17,12 +17,10 @@
 }
 
 .hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font(900, 44px, 1.36, 0.06em);
+
   text-transform: uppercase;
 
-  color: #fff;
+  color: $light-theme;
   margin-bottom: 30px;
 }

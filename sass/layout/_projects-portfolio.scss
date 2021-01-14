@@ -1,18 +1,15 @@
 .header-portfolio {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $light-accent;
 }
 .projects {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .filters-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 1.62, 0.03em);
 
-  color: #212121;
-  background-color: #f5f4f4;
+  color: $secondary-title;
+  background-color: $light-btn;
 
   border-radius: 4px;
   border: 1px solid transparent;
@@ -26,30 +23,24 @@
   &:hover,
   &:focus {
     background-color: #2196f3;
-    color: #ffffff;
+    color: $light-theme;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
 
 .projects-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(700, 18px, 2, 0.06em);
 
-  color: #212121;
+  color: $secondary-title;
 
   margin-bottom: 4px;
 }
 
 .filter-item {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+  @include font(400, 16px, 1.87, 0.03em);
 
-  color: #757575;
+  color: $secondary-text;
 }
 
 .filters-list-btn {
@@ -69,7 +60,7 @@
     margin-right: 30px;
     margin-bottom: 30px;
 
-    background-color: #fff;
+    background-color: $light-theme;
   }
 
   &:nth-child(3n) {
@@ -100,14 +91,10 @@
   position: absolute;
   top: 0;
 
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  font-family: $main-font;
+  @include font(400, 18px, 1.56, 0.03em);
 
-  letter-spacing: 0.03em;
-
-  color: #fff;
+  color: $light-theme;
 
   padding: 63px 24px;
 
@@ -123,9 +110,9 @@
 }
 
 .projects-name-decor {
-  border-bottom: 1px solid #ececec;
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
+  border-bottom: 1px solid $light-accent;
+  border-left: 1px solid $light-accent;
+  border-right: 1px solid $light-accent;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;

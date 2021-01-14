@@ -7,12 +7,9 @@
 }
 
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font(700, 36px, 1.17, 0.03em);
 
-  color: #212121;
+  color: $secondary-title;
 
   margin-bottom: 50px;
 }
@@ -31,14 +28,12 @@
 }
 
 .work-description {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14, 0.03em);
+
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #fff;
+  color: $light-theme;
 
   padding-top: 27px;
   padding-bottom: 27px;

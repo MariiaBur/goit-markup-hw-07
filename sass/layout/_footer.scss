@@ -1,14 +1,11 @@
 .footer {
-  background-color: #2f303a;
+  background-color: $background-theme;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .contact-footer-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
 
   color: rgba(255, 255, 255, 0.6);
 
@@ -21,7 +18,7 @@
 }
 
 .address-footer > .contact-footer-link {
-  color: #fff;
+  color: $light-theme;
   display: inline-block;
   margin-bottom: 9px;
 }
@@ -31,13 +28,11 @@
 }
 
 .social-call {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
+
   text-transform: uppercase;
 
-  color: #fff;
+  color: $light-theme;
   margin-bottom: 20px;
 }
 
@@ -77,12 +72,12 @@
 
   &:hover,
   &:focus {
-    background-color: #2196f3;
+    background-color: $accent-color;
   }
 }
 
 .social-list-footer-icon {
   width: 20px;
   height: 20px;
-  fill: #fff;
+  fill: $light-theme;
 }
